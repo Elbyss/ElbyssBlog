@@ -1,11 +1,11 @@
 import HomeCarousel from '@/components/HomeCarousel';
+import Pinned from '@/components/Pinned';
 import Profile from '@/components/Profile';
-import Carousel from 'react-multi-carousel';
-import 'react-multi-carousel/lib/styles.css';
-export default function Home() {
+export default function HomePage() {
   return (
     <>
       <Profile />
+      <Pinned />
       <HomeCarousel />
     </>
   );

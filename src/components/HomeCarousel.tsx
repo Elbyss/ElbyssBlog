@@ -1,33 +1,18 @@
-'use client';
-import Carousel from 'react-multi-carousel';
+import { getNonFeaturedPosts } from '@/service/posts';
+import CarouselCard from './CarouselCard';
+import PostCard from './PostCard';
 
-export default function HomeCarousel() {
-  const responsive = {
-    desktop: {
-      breakpoint: { max: 3000, min: 1024 },
-      items: 3,
-      slidesToSlide: 3, // optional, default to 1.
-    },
-    tablet: {
-      breakpoint: { max: 1024, min: 464 },
-      items: 2,
-      slidesToSlide: 2, // optional, default to 1.
-    },
-    mobile: {
-      breakpoint: { max: 464, min: 0 },
-      items: 1,
-      slidesToSlide: 1, // optional, default to 1.
-    },
-  };
+export default async function HomeCarousel() {
+  const posts = await getNonFeaturedPosts();
+
   return (
-    <Carousel
-      responsive={responsive}
-      className='text-red-400 border-2 h-60 w-128 flex text-center'
-    >
-      <div>포스트 1</div>
-      <div>포스트 2</div>
-      <div>포스트3 3</div>
-      <div>포스트 4</div>
-    </Carousel>
+    <section className='my-4 px-40'>
+      <h2 className='text-2xl font-bold my-2'>이건 오때?</h2>
+      <CarouselCard>
+        {posts.map((post) => (
+          <PostCard key={post.path} post={post} />
+        ))}
+      </CarouselCard>
+    </section>
   );
 }

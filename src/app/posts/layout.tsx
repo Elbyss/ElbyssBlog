@@ -1,3 +1,3 @@
 export default function PostsLayout() {
-  return <div>layout</div>;
+  return <div>Posts 페이지</div>;
 }

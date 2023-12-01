@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 export default function Header() {
   return (
-    <header className='flex justify-between items-center m-6'>
+    <header className='flex justify-between items-center m-6 px-40'>
       <Link href='/'>
         <span className='font-bold text-2xl'>엘비스 연구실</span>
       </Link>

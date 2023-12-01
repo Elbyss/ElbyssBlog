@@ -1,0 +1,58 @@
+[
+  {
+    "title": "제목",
+    "desc": "ㅁㄴㅇㅁㄴㅇㄴㅁㅇㄴㅁㅇㄴㅁㅁㅁㄴㅇㅁㄴㅇㅁㄴㅇ",
+    "date": "2023-12-01",
+    "category": "story",
+    "path": "best-react-practices",
+    "featured": true
+  },
+  {
+    "title": "제목2",
+    "desc": "내용",
+    "date": "2023-11-01",
+    "category": "story",
+    "path": "javascript-10-tips",
+    "featured": true
+  },
+  {
+    "title": "제목3",
+    "desc": "내용",
+    "date": "2023-10-03",
+    "category": "story",
+    "path": "node-pro-tips",
+    "featured": true
+  },
+  {
+    "title": "제목4",
+    "desc": "내용",
+    "date": "2023-09-01",
+    "category": "BOJ",
+    "path": "review-2021",
+    "featured": true
+  },
+  {
+    "title": "제목5",
+    "desc": "내용",
+    "date": "2023-10-03",
+    "category": "story",
+    "path": "bbbb",
+    "featured": false
+  },
+  {
+    "title": "제목6",
+    "desc": "내용",
+    "date": "2023-09-01",
+    "category": "BOJ",
+    "path": "node-basic",
+    "featured": false
+  },
+  {
+    "title": "제목7",
+    "desc": "내용",
+    "date": "2023-09-01",
+    "category": "BOJ",
+    "path": "review-2023",
+    "featured": false
+  }
+]
