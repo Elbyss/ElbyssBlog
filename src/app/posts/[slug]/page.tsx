@@ -1,16 +1,15 @@
-import MarkdownViewer from '@/components/MarkdownViewer';
+import PostContent from '@/components/PostContent';
 import PostFooter from '@/components/PostFooter';
 import { getpostData } from '@/service/posts';
 import Image from 'next/image';
-import path from 'path';
 type Props = {
   params: {
     slug: string;
   };
 };
 export default async function Postpage({ params: { slug } }: Props) {
-  const { title, content, date, path, desc } = await getpostData(slug);
-
+  const post = await getpostData(slug);
+  const { title, content, date, path, desc, next, prev } = post;
   return (
     <>
       <article className='rounded-2xl overflow-hidden bg-gray-100 shadow-lg m-4'>
@@ -21,17 +20,13 @@ export default async function Postpage({ params: { slug } }: Props) {
           width={760}
           height={420}
         />
-        <section className='flex flex-col p-4'>
-          <div className='flex items-center self-end text-sky-600'>
-            <p className='font-semibold ml-2'>{date.toString()}</p>
-          </div>
-          <h1 className='text-4xl font-bold'>{title}</h1>
-          <p className='text-xl font-bold'>{desc}</p>
-          <div className='w-44 border-2 border-sky-500 mt-4 mb-8'></div>
-          <MarkdownViewer content={content} />
+
+        <PostContent post={post} />
+        <section className='flex shadow-xl'>
+          {prev && <PostFooter post={prev} type='prev' />}
+          {next && <PostFooter post={next} type='next' />}
         </section>
       </article>
-      <PostFooter title={title} date={date} path={path} desc={desc} />
     </>
   );
 }

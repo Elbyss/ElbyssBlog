@@ -1,16 +1,42 @@
-import { PostData } from '@/service/posts';
+import { Post } from '@/service/posts';
+import Image from 'next/image';
+import Link from 'next/link';
+import { FaArrowLeft, FaArrowRight } from 'react-icons/fa6';
+
+type Props = {
+  post: Post;
+  type: 'prev' | 'next';
+};
+
+const ICON_CLASS =
+  'text-5xl m-4 text-yellow-300 transition-all group-hover:text-6xl';
 
 export default function PostFooter({
-  title,
-  desc,
-  date,
-  path,
-  content,
-}: PostData) {
+  post: { path, title, desc },
+  type,
+}: Props) {
   return (
-    <section className='flex border-sky-500 border-2 text-center rounded-md'>
-      <div className='border- border-red-500 flex-1'>{title}</div>
-      <div className='border-1 border-purple-500 flex-1'>{desc}</div>
-    </section>
+    <>
+      <Link
+        href={`/posts/${path}`}
+        className='relative w-full bg-black max-h-56'
+      >
+        <Image
+          className='w-full opacity-40'
+          src={`/images/posts/${path}.png`}
+          alt={title}
+          width={150}
+          height={100}
+        />
+        <div className='group absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full flex justify-around items-center text-white px-8 '>
+          {type === 'prev' && <FaArrowLeft className={ICON_CLASS} />}
+          <div className='w-full text-center'>
+            <h3 className='text-3xl font-bold'>{title}</h3>
+            <p className='fond-bold'>{desc}</p>
+          </div>
+          {type === 'next' && <FaArrowRight className={ICON_CLASS} />}
+        </div>
+      </Link>
+    </>
   );
 }

@@ -10,7 +10,11 @@ export type Post = {
   featured: boolean;
 };
 
-export type PostData = Post & { content: string }; // intersection type(typescript)
+export type PostData = Post & {
+  content: string;
+  next: Post | null;
+  prev: Post | null;
+}; // intersection type(typescript)
 
 export async function getFeaturedPosts(): Promise<Post[]> {
   return getAllPosts().then((posts) => posts.filter((post) => post.featured));
@@ -25,17 +29,21 @@ export async function getAllPosts(): Promise<Post[]> {
     .then<Post[]>(JSON.parse)
     .then((posts) => posts.sort((a, b) => (a.date > b.date ? -1 : 1)));
 }
-키;
 
 export async function getpostData(filename: string): Promise<PostData> {
   const filePath = path.join(process.cwd(), 'data', 'posts', `${filename}.md`);
-  const metadata = await getAllPosts().then((posts) =>
-    posts.find((post) => post.path === filename)
-  );
-  if (!metadata) throw new Error(`${filename}을 찾을 수 없음!`);
+  const posts = await getAllPosts();
+  const post = posts.find((post) => post.path === filename);
+  // posts.find((post) => post.path === filename)
+  if (!post) throw new Error(`${filename}을 찾을 수 없음!`);
+  const index = posts.indexOf(post);
+  const next = index > 0 ? posts[index - 1] : null;
+  const prev = index < posts.length - 1 ? posts[index + 1] : null;
   const content = await readFile(filePath, 'utf-8');
   return {
-    ...metadata,
+    ...post,
     content,
+    next,
+    prev,
   };
 }
