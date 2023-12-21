@@ -10,7 +10,7 @@ export default function PostCard({
     <Link href={`/posts/${path}`}>
       <article className='rounded-t-lg shadow-lg overflow-hidden border-2 border-purple-50 transition ease-in-out delay-0 hover:-translate-y-1 hover:scale-100 hover:bg-gray-100 duration-150'>
         <Image
-          className='w-full h-[20vh]'
+          className='w-full h-auto'
           src={`/images/posts/${path}.png`}
           width={200}
           height={150}

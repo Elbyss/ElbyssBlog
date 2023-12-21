@@ -1,3 +1,7 @@
-export default function PostsLayout() {
-  return <div>Posts 페이지</div>;
+export default function PostsLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
+  return <div>{children}</div>;
 }

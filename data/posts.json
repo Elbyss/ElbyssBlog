@@ -9,7 +9,7 @@
   },
   {
     "title": "제목2",
-    "desc": "내용",
+    "desc": "ㅎㅇㅎㅇㅎㅇㅎㅇㅎㅇ",
     "date": "2023-11-01",
     "category": "story",
     "path": "javascript-10-tips",
@@ -17,7 +17,7 @@
   },
   {
     "title": "제목3",
-    "desc": "내용",
+    "desc": "제목삼의 내용일세",
     "date": "2023-10-03",
     "category": "story",
     "path": "node-pro-tips",
@@ -25,7 +25,7 @@
   },
   {
     "title": "제목4",
-    "desc": "내용",
+    "desc": "아 놀고싶다",
     "date": "2023-09-01",
     "category": "BOJ",
     "path": "review-2021",
@@ -33,10 +33,10 @@
   },
   {
     "title": "제목5",
-    "desc": "내용",
+    "desc": "킹갓이 되기 위하여",
     "date": "2023-10-03",
     "category": "story",
-    "path": "bbbb",
+    "path": "javascript-basic",
     "featured": false
   },
   {

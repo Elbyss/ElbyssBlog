@@ -26,11 +26,12 @@ const RAW_RUNTIME_STATE =
       [null, {\
         "packageLocation": "./",\
         "packageDependencies": [\
+          ["@tailwindcss/typography", "virtual:346c88c133a77da28f24386c04ed478acf9b1fe33ce264d523af85c98f1d1a8f062578c4b775d21b270213ed6a3fe6fc5e1efe4a17b32cfb58153162a632270d#npm:0.5.10"],\
           ["@types/node", "npm:20.10.1"],\
           ["@types/nodemailer", "npm:6.4.14"],\
           ["@types/react", "npm:18.2.39"],\
           ["@types/react-dom", "npm:18.2.17"],\
-          ["@types/react-syntax-highlighter", "npm:15.5.10"],\
+          ["@types/react-syntax-highlighter", "npm:15.5.11"],\
           ["autoprefixer", "virtual:346c88c133a77da28f24386c04ed478acf9b1fe33ce264d523af85c98f1d1a8f062578c4b775d21b270213ed6a3fe6fc5e1efe4a17b32cfb58153162a632270d#npm:10.4.16"],\
           ["eslint", "npm:8.54.0"],\
           ["eslint-config-next", "virtual:346c88c133a77da28f24386c04ed478acf9b1fe33ce264d523af85c98f1d1a8f062578c4b775d21b270213ed6a3fe6fc5e1efe4a17b32cfb58153162a632270d#npm:14.0.3"],\
@@ -43,6 +44,7 @@ const RAW_RUNTIME_STATE =
           ["react-markdown", "virtual:346c88c133a77da28f24386c04ed478acf9b1fe33ce264d523af85c98f1d1a8f062578c4b775d21b270213ed6a3fe6fc5e1efe4a17b32cfb58153162a632270d#npm:9.0.1"],\
           ["react-multi-carousel", "npm:2.8.4"],\
           ["react-syntax-highlighter", "virtual:346c88c133a77da28f24386c04ed478acf9b1fe33ce264d523af85c98f1d1a8f062578c4b775d21b270213ed6a3fe6fc5e1efe4a17b32cfb58153162a632270d#npm:15.5.0"],\
+          ["remark-gfm", "npm:4.0.0"],\
           ["sharp", "npm:0.33.0"],\
           ["tailwindcss", "npm:3.3.5"],\
           ["typescript", "patch:typescript@npm%3A5.3.2#optional!builtin<compat/typescript>::version=5.3.2&hash=e012d7"],\
@@ -615,6 +617,32 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
+    ["@tailwindcss/typography", [\
+      ["npm:0.5.10", {\
+        "packageLocation": "../../.yarn/berry/cache/@tailwindcss-typography-npm-0.5.10-2b2ed3a63b-10c0.zip/node_modules/@tailwindcss/typography/",\
+        "packageDependencies": [\
+          ["@tailwindcss/typography", "npm:0.5.10"]\
+        ],\
+        "linkType": "SOFT"\
+      }],\
+      ["virtual:346c88c133a77da28f24386c04ed478acf9b1fe33ce264d523af85c98f1d1a8f062578c4b775d21b270213ed6a3fe6fc5e1efe4a17b32cfb58153162a632270d#npm:0.5.10", {\
+        "packageLocation": "./.yarn/__virtual__/@tailwindcss-typography-virtual-ef8d7f45e9/3/.yarn/berry/cache/@tailwindcss-typography-npm-0.5.10-2b2ed3a63b-10c0.zip/node_modules/@tailwindcss/typography/",\
+        "packageDependencies": [\
+          ["@tailwindcss/typography", "virtual:346c88c133a77da28f24386c04ed478acf9b1fe33ce264d523af85c98f1d1a8f062578c4b775d21b270213ed6a3fe6fc5e1efe4a17b32cfb58153162a632270d#npm:0.5.10"],\
+          ["@types/tailwindcss", null],\
+          ["lodash.castarray", "npm:4.4.0"],\
+          ["lodash.isplainobject", "npm:4.0.6"],\
+          ["lodash.merge", "npm:4.6.2"],\
+          ["postcss-selector-parser", "npm:6.0.10"],\
+          ["tailwindcss", "npm:3.3.5"]\
+        ],\
+        "packagePeers": [\
+          "@types/tailwindcss",\
+          "tailwindcss"\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
     ["@types/debug", [\
       ["npm:4.1.12", {\
         "packageLocation": "../../.yarn/berry/cache/@types-debug-npm-4.1.12-82a3fc4905-10c0.zip/node_modules/@types/debug/",\
@@ -742,10 +770,10 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["@types/react-syntax-highlighter", [\
-      ["npm:15.5.10", {\
-        "packageLocation": "../../.yarn/berry/cache/@types-react-syntax-highlighter-npm-15.5.10-79d91c57bd-10c0.zip/node_modules/@types/react-syntax-highlighter/",\
+      ["npm:15.5.11", {\
+        "packageLocation": "../../.yarn/berry/cache/@types-react-syntax-highlighter-npm-15.5.11-34f3f330a6-10c0.zip/node_modules/@types/react-syntax-highlighter/",\
         "packageDependencies": [\
-          ["@types/react-syntax-highlighter", "npm:15.5.10"],\
+          ["@types/react-syntax-highlighter", "npm:15.5.11"],\
           ["@types/react", "npm:18.2.39"]\
         ],\
         "linkType": "HARD"\
@@ -1759,11 +1787,12 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./",\
         "packageDependencies": [\
           ["elbyss_blog", "workspace:."],\
+          ["@tailwindcss/typography", "virtual:346c88c133a77da28f24386c04ed478acf9b1fe33ce264d523af85c98f1d1a8f062578c4b775d21b270213ed6a3fe6fc5e1efe4a17b32cfb58153162a632270d#npm:0.5.10"],\
           ["@types/node", "npm:20.10.1"],\
           ["@types/nodemailer", "npm:6.4.14"],\
           ["@types/react", "npm:18.2.39"],\
           ["@types/react-dom", "npm:18.2.17"],\
-          ["@types/react-syntax-highlighter", "npm:15.5.10"],\
+          ["@types/react-syntax-highlighter", "npm:15.5.11"],\
           ["autoprefixer", "virtual:346c88c133a77da28f24386c04ed478acf9b1fe33ce264d523af85c98f1d1a8f062578c4b775d21b270213ed6a3fe6fc5e1efe4a17b32cfb58153162a632270d#npm:10.4.16"],\
           ["eslint", "npm:8.54.0"],\
           ["eslint-config-next", "virtual:346c88c133a77da28f24386c04ed478acf9b1fe33ce264d523af85c98f1d1a8f062578c4b775d21b270213ed6a3fe6fc5e1efe4a17b32cfb58153162a632270d#npm:14.0.3"],\
@@ -1776,6 +1805,7 @@ const RAW_RUNTIME_STATE =
           ["react-markdown", "virtual:346c88c133a77da28f24386c04ed478acf9b1fe33ce264d523af85c98f1d1a8f062578c4b775d21b270213ed6a3fe6fc5e1efe4a17b32cfb58153162a632270d#npm:9.0.1"],\
           ["react-multi-carousel", "npm:2.8.4"],\
           ["react-syntax-highlighter", "virtual:346c88c133a77da28f24386c04ed478acf9b1fe33ce264d523af85c98f1d1a8f062578c4b775d21b270213ed6a3fe6fc5e1efe4a17b32cfb58153162a632270d#npm:15.5.0"],\
+          ["remark-gfm", "npm:4.0.0"],\
           ["sharp", "npm:0.33.0"],\
           ["tailwindcss", "npm:3.3.5"],\
           ["typescript", "patch:typescript@npm%3A5.3.2#optional!builtin<compat/typescript>::version=5.3.2&hash=e012d7"],\
@@ -1967,6 +1997,13 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "../../.yarn/berry/cache/escape-string-regexp-npm-4.0.0-4b531d8d59-10c0.zip/node_modules/escape-string-regexp/",\
         "packageDependencies": [\
           ["escape-string-regexp", "npm:4.0.0"]\
+        ],\
+        "linkType": "HARD"\
+      }],\
+      ["npm:5.0.0", {\
+        "packageLocation": "../../.yarn/berry/cache/escape-string-regexp-npm-5.0.0-a663e825ce-10c0.zip/node_modules/escape-string-regexp/",\
+        "packageDependencies": [\
+          ["escape-string-regexp", "npm:5.0.0"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -3636,6 +3673,24 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
+    ["lodash.castarray", [\
+      ["npm:4.4.0", {\
+        "packageLocation": "../../.yarn/berry/cache/lodash.castarray-npm-4.4.0-f3706198e9-10c0.zip/node_modules/lodash.castarray/",\
+        "packageDependencies": [\
+          ["lodash.castarray", "npm:4.4.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["lodash.isplainobject", [\
+      ["npm:4.0.6", {\
+        "packageLocation": "../../.yarn/berry/cache/lodash.isplainobject-npm-4.0.6-d73937742f-10c0.zip/node_modules/lodash.isplainobject/",\
+        "packageDependencies": [\
+          ["lodash.isplainobject", "npm:4.0.6"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
     ["lodash.merge", [\
       ["npm:4.6.2", {\
         "packageLocation": "../../.yarn/berry/cache/lodash.merge-npm-4.6.2-77cb4416bf-10c0.zip/node_modules/lodash.merge/",\
@@ -3712,6 +3767,28 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
+    ["markdown-table", [\
+      ["npm:3.0.3", {\
+        "packageLocation": "../../.yarn/berry/cache/markdown-table-npm-3.0.3-b24147eaf5-10c0.zip/node_modules/markdown-table/",\
+        "packageDependencies": [\
+          ["markdown-table", "npm:3.0.3"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["mdast-util-find-and-replace", [\
+      ["npm:3.0.1", {\
+        "packageLocation": "../../.yarn/berry/cache/mdast-util-find-and-replace-npm-3.0.1-284ae6ddf8-10c0.zip/node_modules/mdast-util-find-and-replace/",\
+        "packageDependencies": [\
+          ["mdast-util-find-and-replace", "npm:3.0.1"],\
+          ["@types/mdast", "npm:4.0.3"],\
+          ["escape-string-regexp", "npm:5.0.0"],\
+          ["unist-util-is", "npm:6.0.0"],\
+          ["unist-util-visit-parents", "npm:6.0.1"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
     ["mdast-util-from-markdown", [\
       ["npm:2.0.0", {\
         "packageLocation": "../../.yarn/berry/cache/mdast-util-from-markdown-npm-2.0.0-7358a7473f-10c0.zip/node_modules/mdast-util-from-markdown/",\
@@ -3729,6 +3806,89 @@ const RAW_RUNTIME_STATE =
           ["micromark-util-symbol", "npm:2.0.0"],\
           ["micromark-util-types", "npm:2.0.0"],\
           ["unist-util-stringify-position", "npm:4.0.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["mdast-util-gfm", [\
+      ["npm:3.0.0", {\
+        "packageLocation": "../../.yarn/berry/cache/mdast-util-gfm-npm-3.0.0-c4b06d0013-10c0.zip/node_modules/mdast-util-gfm/",\
+        "packageDependencies": [\
+          ["mdast-util-gfm", "npm:3.0.0"],\
+          ["mdast-util-from-markdown", "npm:2.0.0"],\
+          ["mdast-util-gfm-autolink-literal", "npm:2.0.0"],\
+          ["mdast-util-gfm-footnote", "npm:2.0.0"],\
+          ["mdast-util-gfm-strikethrough", "npm:2.0.0"],\
+          ["mdast-util-gfm-table", "npm:2.0.0"],\
+          ["mdast-util-gfm-task-list-item", "npm:2.0.0"],\
+          ["mdast-util-to-markdown", "npm:2.1.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["mdast-util-gfm-autolink-literal", [\
+      ["npm:2.0.0", {\
+        "packageLocation": "../../.yarn/berry/cache/mdast-util-gfm-autolink-literal-npm-2.0.0-620ccef115-10c0.zip/node_modules/mdast-util-gfm-autolink-literal/",\
+        "packageDependencies": [\
+          ["mdast-util-gfm-autolink-literal", "npm:2.0.0"],\
+          ["@types/mdast", "npm:4.0.3"],\
+          ["ccount", "npm:2.0.1"],\
+          ["devlop", "npm:1.1.0"],\
+          ["mdast-util-find-and-replace", "npm:3.0.1"],\
+          ["micromark-util-character", "npm:2.0.1"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["mdast-util-gfm-footnote", [\
+      ["npm:2.0.0", {\
+        "packageLocation": "../../.yarn/berry/cache/mdast-util-gfm-footnote-npm-2.0.0-4a167ca606-10c0.zip/node_modules/mdast-util-gfm-footnote/",\
+        "packageDependencies": [\
+          ["mdast-util-gfm-footnote", "npm:2.0.0"],\
+          ["@types/mdast", "npm:4.0.3"],\
+          ["devlop", "npm:1.1.0"],\
+          ["mdast-util-from-markdown", "npm:2.0.0"],\
+          ["mdast-util-to-markdown", "npm:2.1.0"],\
+          ["micromark-util-normalize-identifier", "npm:2.0.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["mdast-util-gfm-strikethrough", [\
+      ["npm:2.0.0", {\
+        "packageLocation": "../../.yarn/berry/cache/mdast-util-gfm-strikethrough-npm-2.0.0-d16d95c318-10c0.zip/node_modules/mdast-util-gfm-strikethrough/",\
+        "packageDependencies": [\
+          ["mdast-util-gfm-strikethrough", "npm:2.0.0"],\
+          ["@types/mdast", "npm:4.0.3"],\
+          ["mdast-util-from-markdown", "npm:2.0.0"],\
+          ["mdast-util-to-markdown", "npm:2.1.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["mdast-util-gfm-table", [\
+      ["npm:2.0.0", {\
+        "packageLocation": "../../.yarn/berry/cache/mdast-util-gfm-table-npm-2.0.0-45a74f064b-10c0.zip/node_modules/mdast-util-gfm-table/",\
+        "packageDependencies": [\
+          ["mdast-util-gfm-table", "npm:2.0.0"],\
+          ["@types/mdast", "npm:4.0.3"],\
+          ["devlop", "npm:1.1.0"],\
+          ["markdown-table", "npm:3.0.3"],\
+          ["mdast-util-from-markdown", "npm:2.0.0"],\
+          ["mdast-util-to-markdown", "npm:2.1.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["mdast-util-gfm-task-list-item", [\
+      ["npm:2.0.0", {\
+        "packageLocation": "../../.yarn/berry/cache/mdast-util-gfm-task-list-item-npm-2.0.0-cb1270a10f-10c0.zip/node_modules/mdast-util-gfm-task-list-item/",\
+        "packageDependencies": [\
+          ["mdast-util-gfm-task-list-item", "npm:2.0.0"],\
+          ["@types/mdast", "npm:4.0.3"],\
+          ["devlop", "npm:1.1.0"],\
+          ["mdast-util-from-markdown", "npm:2.0.0"],\
+          ["mdast-util-to-markdown", "npm:2.1.0"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -3894,6 +4054,106 @@ const RAW_RUNTIME_STATE =
           ["micromark-util-normalize-identifier", "npm:2.0.0"],\
           ["micromark-util-resolve-all", "npm:2.0.0"],\
           ["micromark-util-subtokenize", "npm:2.0.0"],\
+          ["micromark-util-symbol", "npm:2.0.0"],\
+          ["micromark-util-types", "npm:2.0.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["micromark-extension-gfm", [\
+      ["npm:3.0.0", {\
+        "packageLocation": "../../.yarn/berry/cache/micromark-extension-gfm-npm-3.0.0-d154ab531f-10c0.zip/node_modules/micromark-extension-gfm/",\
+        "packageDependencies": [\
+          ["micromark-extension-gfm", "npm:3.0.0"],\
+          ["micromark-extension-gfm-autolink-literal", "npm:2.0.0"],\
+          ["micromark-extension-gfm-footnote", "npm:2.0.0"],\
+          ["micromark-extension-gfm-strikethrough", "npm:2.0.0"],\
+          ["micromark-extension-gfm-table", "npm:2.0.0"],\
+          ["micromark-extension-gfm-tagfilter", "npm:2.0.0"],\
+          ["micromark-extension-gfm-task-list-item", "npm:2.0.1"],\
+          ["micromark-util-combine-extensions", "npm:2.0.0"],\
+          ["micromark-util-types", "npm:2.0.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["micromark-extension-gfm-autolink-literal", [\
+      ["npm:2.0.0", {\
+        "packageLocation": "../../.yarn/berry/cache/micromark-extension-gfm-autolink-literal-npm-2.0.0-b724d31829-10c0.zip/node_modules/micromark-extension-gfm-autolink-literal/",\
+        "packageDependencies": [\
+          ["micromark-extension-gfm-autolink-literal", "npm:2.0.0"],\
+          ["micromark-util-character", "npm:2.0.1"],\
+          ["micromark-util-sanitize-uri", "npm:2.0.0"],\
+          ["micromark-util-symbol", "npm:2.0.0"],\
+          ["micromark-util-types", "npm:2.0.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["micromark-extension-gfm-footnote", [\
+      ["npm:2.0.0", {\
+        "packageLocation": "../../.yarn/berry/cache/micromark-extension-gfm-footnote-npm-2.0.0-22161d24c5-10c0.zip/node_modules/micromark-extension-gfm-footnote/",\
+        "packageDependencies": [\
+          ["micromark-extension-gfm-footnote", "npm:2.0.0"],\
+          ["devlop", "npm:1.1.0"],\
+          ["micromark-core-commonmark", "npm:2.0.0"],\
+          ["micromark-factory-space", "npm:2.0.0"],\
+          ["micromark-util-character", "npm:2.0.1"],\
+          ["micromark-util-normalize-identifier", "npm:2.0.0"],\
+          ["micromark-util-sanitize-uri", "npm:2.0.0"],\
+          ["micromark-util-symbol", "npm:2.0.0"],\
+          ["micromark-util-types", "npm:2.0.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["micromark-extension-gfm-strikethrough", [\
+      ["npm:2.0.0", {\
+        "packageLocation": "../../.yarn/berry/cache/micromark-extension-gfm-strikethrough-npm-2.0.0-32b23d068e-10c0.zip/node_modules/micromark-extension-gfm-strikethrough/",\
+        "packageDependencies": [\
+          ["micromark-extension-gfm-strikethrough", "npm:2.0.0"],\
+          ["devlop", "npm:1.1.0"],\
+          ["micromark-util-chunked", "npm:2.0.0"],\
+          ["micromark-util-classify-character", "npm:2.0.0"],\
+          ["micromark-util-resolve-all", "npm:2.0.0"],\
+          ["micromark-util-symbol", "npm:2.0.0"],\
+          ["micromark-util-types", "npm:2.0.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["micromark-extension-gfm-table", [\
+      ["npm:2.0.0", {\
+        "packageLocation": "../../.yarn/berry/cache/micromark-extension-gfm-table-npm-2.0.0-91b6cc0ef5-10c0.zip/node_modules/micromark-extension-gfm-table/",\
+        "packageDependencies": [\
+          ["micromark-extension-gfm-table", "npm:2.0.0"],\
+          ["devlop", "npm:1.1.0"],\
+          ["micromark-factory-space", "npm:2.0.0"],\
+          ["micromark-util-character", "npm:2.0.1"],\
+          ["micromark-util-symbol", "npm:2.0.0"],\
+          ["micromark-util-types", "npm:2.0.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["micromark-extension-gfm-tagfilter", [\
+      ["npm:2.0.0", {\
+        "packageLocation": "../../.yarn/berry/cache/micromark-extension-gfm-tagfilter-npm-2.0.0-c5ad486636-10c0.zip/node_modules/micromark-extension-gfm-tagfilter/",\
+        "packageDependencies": [\
+          ["micromark-extension-gfm-tagfilter", "npm:2.0.0"],\
+          ["micromark-util-types", "npm:2.0.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["micromark-extension-gfm-task-list-item", [\
+      ["npm:2.0.1", {\
+        "packageLocation": "../../.yarn/berry/cache/micromark-extension-gfm-task-list-item-npm-2.0.1-7e34125fdb-10c0.zip/node_modules/micromark-extension-gfm-task-list-item/",\
+        "packageDependencies": [\
+          ["micromark-extension-gfm-task-list-item", "npm:2.0.1"],\
+          ["devlop", "npm:1.1.0"],\
+          ["micromark-factory-space", "npm:2.0.0"],\
+          ["micromark-util-character", "npm:2.0.1"],\
           ["micromark-util-symbol", "npm:2.0.0"],\
           ["micromark-util-types", "npm:2.0.0"]\
         ],\
@@ -4823,6 +5083,15 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["postcss-selector-parser", [\
+      ["npm:6.0.10", {\
+        "packageLocation": "../../.yarn/berry/cache/postcss-selector-parser-npm-6.0.10-a4d7aaa270-10c0.zip/node_modules/postcss-selector-parser/",\
+        "packageDependencies": [\
+          ["postcss-selector-parser", "npm:6.0.10"],\
+          ["cssesc", "npm:3.0.0"],\
+          ["util-deprecate", "npm:1.0.2"]\
+        ],\
+        "linkType": "HARD"\
+      }],\
       ["npm:6.0.13", {\
         "packageLocation": "../../.yarn/berry/cache/postcss-selector-parser-npm-6.0.13-f732d92326-10c0.zip/node_modules/postcss-selector-parser/",\
         "packageDependencies": [\
@@ -5144,6 +5413,21 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
+    ["remark-gfm", [\
+      ["npm:4.0.0", {\
+        "packageLocation": "../../.yarn/berry/cache/remark-gfm-npm-4.0.0-8bb699e315-10c0.zip/node_modules/remark-gfm/",\
+        "packageDependencies": [\
+          ["remark-gfm", "npm:4.0.0"],\
+          ["@types/mdast", "npm:4.0.3"],\
+          ["mdast-util-gfm", "npm:3.0.0"],\
+          ["micromark-extension-gfm", "npm:3.0.0"],\
+          ["remark-parse", "npm:11.0.0"],\
+          ["remark-stringify", "npm:11.0.0"],\
+          ["unified", "npm:11.0.4"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
     ["remark-parse", [\
       ["npm:11.0.0", {\
         "packageLocation": "../../.yarn/berry/cache/remark-parse-npm-11.0.0-6484fba69e-10c0.zip/node_modules/remark-parse/",\
@@ -5167,6 +5451,18 @@ const RAW_RUNTIME_STATE =
           ["mdast-util-to-hast", "npm:13.0.2"],\
           ["unified", "npm:11.0.4"],\
           ["vfile", "npm:6.0.1"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["remark-stringify", [\
+      ["npm:11.0.0", {\
+        "packageLocation": "../../.yarn/berry/cache/remark-stringify-npm-11.0.0-b41a557b8d-10c0.zip/node_modules/remark-stringify/",\
+        "packageDependencies": [\
+          ["remark-stringify", "npm:11.0.0"],\
+          ["@types/mdast", "npm:4.0.3"],\
+          ["mdast-util-to-markdown", "npm:2.1.0"],\
+          ["unified", "npm:11.0.4"]\
         ],\
         "linkType": "HARD"\
       }]\
