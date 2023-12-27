@@ -48,7 +48,7 @@ const RAW_RUNTIME_STATE =
           ["sharp", "npm:0.33.0"],\
           ["tailwindcss", "npm:3.3.5"],\
           ["typescript", "patch:typescript@npm%3A5.3.2#optional!builtin<compat/typescript>::version=5.3.2&hash=e012d7"],\
-          ["yup", "npm:1.3.2"]\
+          ["yup", "npm:1.3.3"]\
         ],\
         "linkType": "SOFT"\
       }]\
@@ -1809,7 +1809,7 @@ const RAW_RUNTIME_STATE =
           ["sharp", "npm:0.33.0"],\
           ["tailwindcss", "npm:3.3.5"],\
           ["typescript", "patch:typescript@npm%3A5.3.2#optional!builtin<compat/typescript>::version=5.3.2&hash=e012d7"],\
-          ["yup", "npm:1.3.2"]\
+          ["yup", "npm:1.3.3"]\
         ],\
         "linkType": "SOFT"\
       }]\
@@ -6612,10 +6612,10 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["yup", [\
-      ["npm:1.3.2", {\
-        "packageLocation": "../../.yarn/berry/cache/yup-npm-1.3.2-558e934d09-10c0.zip/node_modules/yup/",\
+      ["npm:1.3.3", {\
+        "packageLocation": "../../.yarn/berry/cache/yup-npm-1.3.3-bef3f67698-10c0.zip/node_modules/yup/",\
         "packageDependencies": [\
-          ["yup", "npm:1.3.2"],\
+          ["yup", "npm:1.3.3"],\
           ["property-expr", "npm:2.0.6"],\
           ["tiny-case", "npm:1.0.3"],\
           ["toposort", "npm:2.0.2"],\

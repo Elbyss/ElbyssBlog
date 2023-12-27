@@ -1473,7 +1473,7 @@ __metadata:
     sharp: "npm:^0.33.0"
     tailwindcss: "npm:^3.3.0"
     typescript: "npm:^5"
-    yup: "npm:^1.3.2"
+    yup: "npm:^1.3.3"
   languageName: unknown
   linkType: soft
 
@@ -5667,15 +5667,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"yup@npm:^1.3.2":
-  version: 1.3.2
-  resolution: "yup@npm:1.3.2"
+"yup@npm:^1.3.3":
+  version: 1.3.3
+  resolution: "yup@npm:1.3.3"
   dependencies:
     property-expr: "npm:^2.0.5"
     tiny-case: "npm:^1.0.3"
     toposort: "npm:^2.0.2"
     type-fest: "npm:^2.19.0"
-  checksum: 0820db84fc617b5a75b739bbdef73599bc36ad5a23f2746ae2e2600bb8bc7274a4f178336ab030f5d1a36774aeb08b891aa3fb6d88f64ef61f82ffc8e328b67d
+  checksum: cc00e98af8617b779dd151d6a77779228cfe973a185c743628b2afdecda88c333187d058c1199518d696c15827ba9b757a6c57c1ace6766d970d3cd2368c3264
   languageName: node
   linkType: hard
 
